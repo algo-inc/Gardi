@@ -1,0 +1,749 @@
+@media only screen and (max-width: 1920px) {
+}
+
+@media only screen and (max-width: 1680px) {
+}
+
+@media only screen and (max-width: 1366px) {
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1023px) {
+    .shop-cart {
+        width: 60px;
+        height: 120px;
+    }
+
+    .shop-cart i.shop-basket {
+        width: 35px;
+        height: 35px;
+    }
+
+    .shop-cart span.oct-fixed-bar-quantity {
+        left: 54%;
+    }
+
+    .shop-cart i.shop-profile {
+        width: 25px;
+        margin-top: 14%;
+        height: 25px;
+        left: 14%;
+    }
+
+    .intro__bg {
+        top: 0;
+    }
+
+    .navbar-nav {
+        font-size: 14px;
+    }
+
+    .oct-mm-simple-link > a {
+        padding: 0 7px;
+    }
+
+    .oct-mm-link > a {
+        padding: 0 10px;
+    }
+
+    .logo_top {
+        width: 200px;
+    }
+
+    ul.soc li {
+        margin-right: 0px;
+    }
+
+    ul.soc .profile-ic {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul.soc .facebook {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul.soc .youtube {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul.soc .insta {
+        width: 40px;
+        height: 40px;
+    }
+
+    ul.soc .hed-tel {
+        width: 40px;
+        height: 40px;
+    }
+
+    .img-lend {
+        left: -181px;
+    }
+
+    .point-1 {
+        top: 30%;
+    }
+
+    .point-122 {
+        left: -14%;
+    }
+
+    .point-3 {
+        left: -13%;
+    }
+
+    .point-4 {
+        left: -9%;
+    }
+
+    .point-5 {
+        left: 4%;
+    }
+
+    .point-6 {
+        left: 4%;
+    }
+
+    .point-7 {
+        left: 25%;
+    }
+
+    .point-13 {
+        left: 53%;
+    }
+
+    .point-14 {
+        left: 36%;
+    }
+
+    .left-h1 h1 {
+        font-size: 29px;
+    }
+
+    .left-h1 p {
+        font-size: 19px;
+    }
+
+    .left-h1 button {
+        width: 110px;
+        height: 35px;
+        top: -28%;
+        right: 36px;
+        font-size: 15px;
+        padding-top: 3px;
+    }
+
+    .left-h2 h2.the-best {
+        font-size: 19px;
+    }
+
+    .preim-block h2 {
+        font-size: 12px;
+    }
+
+    .left-h2 .preim-block p {
+        font-size: 13px;
+    }
+
+    .left-h2-row {
+        z-index: 7;
+    }
+
+    .preim .preim-bc-1 {
+        margin-top: 150px;
+    }
+
+    .preim .preim-bc-2 {
+        margin-top: 50px;
+    }
+
+    .preim-block p {
+        font-size: 13px;
+    }
+
+    .servis h2.the-best {
+        font-size: 19px;
+        margin-left: 68px;
+        margin-top: 12px;
+        height: 84px;
+    }
+
+    .servis .the-best span {
+        width: 64px;
+        height: 64px;
+        padding: 21px 20px 20px 27px;
+        margin-right: 3px;
+    }
+
+    .servis .the-best strong {
+        margin-left: 66px;
+        top: -20px;
+    }
+
+    .servis .ser-left-b p {
+        font-size: 13px;
+    }
+
+    .servis-nav {
+        left: 50%;
+    }
+
+    .servis-nav ul li {
+        font-size: 16px;
+        padding-top: 0px;
+        padding-bottom: 52px;
+    }
+
+    .pointt-0 {
+        top: 43%;
+    }
+
+    .pointt-01 {
+        top: 75%;
+    }
+
+    .pointt-2 {
+        top: -14%;
+    }
+
+    .pointt-3 {
+        top: 40%;
+        left: -54%;
+    }
+
+    .pointt-31 {
+        top: 72%;
+    }
+
+    .pointt-4 {
+        top: 48%;
+    }
+
+    .pointt-5 {
+        top: 23%;
+    }
+
+    .pointt-51 {
+        top: 76%;
+    }
+
+    .pointt-7 {
+        top: 63%;
+    }
+
+    .pointt-81 {
+        top: 74%;
+    }
+
+    .pointt-9 {
+        width: 31%;
+        top: 61%;
+    }
+
+    .item h2.the-best {
+        font-size: 19px;
+    }
+
+    .item .the-best span {
+        width: 64px;
+        height: 64px;
+        padding: 20px 20px 20px 18px;
+        margin-right: 0px;
+    }
+
+    .item p {
+        font-size: 10px;
+    }
+
+    .item-info .tab-info h3 {
+        font-size: 0.6rem;
+    }
+
+    .item-info .tab-info h4 {
+        font-size: 0.6rem;
+    }
+
+    .partner {
+        margin-top: 50px;
+    }
+
+    .partner h2.the-best {
+        font-size: 19px;
+        height: 70px;
+    }
+
+    .partner .the-best span {
+        width: 64px;
+        height: 64px;
+        padding: 20px 20px 20px 26px;
+        margin-right: 0px;
+    }
+
+    .partner .the-best strong {
+        margin-left: 14%;
+    }
+
+    .partner p {
+        font-size: 14px;
+    }
+
+    .partner button {
+        width: 130px;
+        height: 35px;
+        font-size: 15px;
+        padding-top: 3px;
+    }
+
+    .history h2.the-best {
+        font-size: 19px;
+        height: 70px;
+    }
+
+    .history .the-best span {
+        width: 64px;
+        height: 64px;
+        padding: 20px 20px 20px 26px;
+        margin-right: 0px;
+    }
+
+    .history .the-best strong {
+        margin-left: 14%;
+    }
+
+    .history p {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .history button {
+        width: 130px;
+        height: 35px;
+        font-size: 15px;
+        padding-top: 3px;
+    }
+
+    .foot-h {
+        margin-top: 7% !important;
+        margin-bottom: 5% !important;
+        font-size: 18px;
+    }
+
+    .foot-two-row h3 {
+        font-size: 18px;
+    }
+
+    .foot-two-row li a {
+        font-size: 13px;
+    }
+
+    .foot-two-col button {
+        width: 179px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    footer {
+        height: 716px;
+    }
+
+    h3.cat-diz {
+        font-size: 13px !important;
+    }
+
+    .us-categories-item {
+        font-size: 12px;
+    }
+
+    .us-categories-children > li:first-child {
+        margin-top: 5px;
+    }
+
+    .us-categories-2 > .us-categories-item {
+        font-size: 12px;
+    }
+
+    .cat-diz-b {
+        margin-top: -45px !important;
+    }
+
+    .us-main-shop-title {
+        font-size: 27px !important;
+    }
+
+    .block-item .block-item-b {
+        max-height: 420px;
+    }
+
+
+    @media only screen and (max-width: 1024px) and (min-width: 991px) {
+        .shop-cart {
+            width: 60px;
+            height: 120px;
+        }
+
+        .shop-cart i.shop-basket {
+            width: 35px;
+            height: 35px;
+        }
+
+        .shop-cart span.oct-fixed-bar-quantity {
+            left: 54%;
+        }
+
+        .shop-cart i.shop-profile {
+            width: 25px;
+            margin-top: 14%;
+            height: 25px;
+            left: 14%;
+        }
+
+        .intro__bg {
+            top: 0;
+        }
+
+        .navbar-nav {
+            font-size: 14px;
+        }
+
+        .oct-mm-simple-link > a {
+            padding: 0 7px;
+        }
+
+        .oct-mm-link > a {
+            padding: 0 10px;
+        }
+
+        .logo_top {
+            width: 200px;
+        }
+
+        ul.soc li {
+            margin-right: 0px;
+        }
+
+        ul.soc .profile-ic {
+            width: 40px;
+            height: 40px;
+        }
+
+        ul.soc .facebook {
+            width: 40px;
+            height: 40px;
+        }
+
+        ul.soc .youtube {
+            width: 40px;
+            height: 40px;
+        }
+
+        ul.soc .insta {
+            width: 40px;
+            height: 40px;
+        }
+
+        ul.soc .hed-tel {
+            width: 40px;
+            height: 40px;
+        }
+
+        .img-lend {
+            left: -181px;
+        }
+
+        .point-1 {
+            top: 30%;
+        }
+
+        .point-122 {
+            left: -14%;
+        }
+
+        .point-3 {
+            left: -13%;
+        }
+
+        .point-4 {
+            left: -9%;
+        }
+
+        .point-5 {
+            left: 4%;
+        }
+
+        .point-6 {
+            left: 4%;
+        }
+
+        .point-7 {
+            left: 25%;
+        }
+
+        .point-13 {
+            left: 53%;
+        }
+
+        .point-14 {
+            left: 36%;
+        }
+
+        .left-h1 h1 {
+            font-size: 29px;
+        }
+
+        .left-h1 p {
+            font-size: 19px;
+        }
+
+        .left-h1 button {
+            width: 110px;
+            height: 35px;
+            top: -28%;
+            right: 36px;
+            font-size: 15px;
+            padding-top: 3px;
+        }
+
+        .left-h2 h2.the-best {
+            font-size: 19px;
+        }
+
+        .preim-block h2 {
+            font-size: 12px;
+        }
+
+        .left-h2 .preim-block p {
+            font-size: 13px;
+        }
+
+        .left-h2-row {
+            z-index: 7;
+        }
+
+        .preim .preim-bc-1 {
+            margin-top: 150px;
+        }
+
+        .preim .preim-bc-2 {
+            margin-top: 50px;
+        }
+
+        .preim-block p {
+            font-size: 13px;
+        }
+
+        .servis h2.the-best {
+            font-size: 19px;
+            margin-left: 68px;
+            margin-top: 12px;
+            height: 84px;
+        }
+
+        .servis .the-best span {
+            width: 64px;
+            height: 64px;
+            padding: 21px 20px 20px 27px;
+            margin-right: 3px;
+        }
+
+        .servis .the-best strong {
+            margin-left: 66px;
+            top: -20px;
+        }
+
+        .servis .ser-left-b p {
+            font-size: 13px;
+        }
+
+        .servis-nav {
+            left: 50%;
+        }
+
+        .servis-nav ul li {
+            font-size: 16px;
+            padding-top: 0px;
+            padding-bottom: 52px;
+        }
+
+        .pointt-0 {
+            top: 43%;
+        }
+
+        .pointt-01 {
+            top: 75%;
+        }
+
+        .pointt-2 {
+            top: -14%;
+        }
+
+        .pointt-3 {
+            top: 40%;
+            left: -54%;
+        }
+
+        .pointt-31 {
+            top: 72%;
+        }
+
+        .pointt-4 {
+            top: 48%;
+        }
+
+        .pointt-5 {
+            top: 23%;
+        }
+
+        .pointt-51 {
+            top: 76%;
+        }
+
+        .pointt-7 {
+            top: 63%;
+        }
+
+        .pointt-81 {
+            top: 74%;
+        }
+
+        .pointt-9 {
+            width: 31%;
+            top: 61%;
+        }
+
+        .item h2.the-best {
+            font-size: 19px;
+        }
+
+        .item .the-best span {
+            width: 64px;
+            height: 64px;
+            padding: 20px 20px 20px 18px;
+            margin-right: 0px;
+        }
+
+        .item p {
+            font-size: 10px;
+        }
+
+
+        .partner {
+            margin-top: 50px;
+        }
+
+        .partner h2.the-best {
+            font-size: 19px;
+            height: 70px;
+        }
+
+        .partner .the-best span {
+            width: 64px;
+            height: 64px;
+            padding: 20px 20px 20px 26px;
+            margin-right: 0px;
+        }
+
+        .partner .the-best strong {
+            margin-left: 14%;
+        }
+
+        .partner p {
+            font-size: 14px;
+        }
+
+        .partner button {
+            width: 130px;
+            height: 35px;
+            font-size: 15px;
+            padding-top: 3px;
+        }
+
+        .history h2.the-best {
+            font-size: 19px;
+            height: 70px;
+        }
+
+        .history .the-best span {
+            width: 64px;
+            height: 64px;
+            padding: 20px 20px 20px 26px;
+            margin-right: 0px;
+        }
+
+        .history .the-best strong {
+            margin-left: 14%;
+        }
+
+        .history p {
+            font-size: 14px;
+            margin-top: 0;
+        }
+
+        .history button {
+            width: 130px;
+            height: 35px;
+            font-size: 15px;
+            padding-top: 3px;
+        }
+
+        .foot-h {
+            margin-top: 7% !important;
+            margin-bottom: 5% !important;
+            font-size: 18px;
+        }
+
+        .foot-two-row h3 {
+            font-size: 18px;
+        }
+
+        .foot-two-row li a {
+            font-size: 13px;
+        }
+
+        .foot-two-col button {
+            width: 179px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        footer {
+            height: 716px;
+        }
+
+        h3.cat-diz {
+            font-size: 13px !important;
+        }
+
+        .us-categories-item {
+            font-size: 12px;
+        }
+
+        .us-categories-children > li:first-child {
+            margin-top: 5px;
+        }
+
+        .us-categories-2 > .us-categories-item {
+            font-size: 12px;
+        }
+
+        .cat-diz-b {
+            margin-top: -45px !important;
+        }
+
+        .us-main-shop-title {
+            font-size: 27px !important;
+        }
+
+        .block-item .block-item-b {
+            max-height: 350px;
+        }
+    }
+
+    @media all and (orientation: landscape) {
+
+    }
+
+    @media all and (orientation: portrait) {
+
+    }

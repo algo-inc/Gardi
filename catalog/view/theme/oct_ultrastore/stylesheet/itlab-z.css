@@ -1,0 +1,13 @@
+.us-content {
+    background-color: unset;
+    box-shadow: none;
+    padding: 0;
+    height: 100%;
+    transition: none;
+}
+main.contact {
+    margin-top: 0;
+}
+main #content {
+    padding: 0;
+}

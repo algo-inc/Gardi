@@ -1,0 +1,7 @@
+# Ignore configuration files that may contain sensitive information
+/config.php
+/admin/config.php
+
+# Ignore system and storage folders
+/system/storage/
+/image/cache/

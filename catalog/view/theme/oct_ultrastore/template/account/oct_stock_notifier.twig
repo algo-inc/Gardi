@@ -1,0 +1,100 @@
+{{ header }}
+<link rel="stylesheet" href="/catalog/view/theme/oct_ultrastore/stylesheet/all.css">
+<div id="oct_stock_notifier" class="container">
+	{{ oct_breadcrumbs }}
+	<main class="main">
+		<div class="row">
+			<div class="col-lg-12">
+                <h1 class="us-main-shop-title">{{ heading_title }}</h1>
+            </div>
+		</div>
+		<div class="content-top-box">{{ content_top }}</div>
+		{% if success %}
+			<script>
+				usNotify('success', '{{ success }}');
+			</script>
+		{% endif %}
+		<div class="row">
+			{{ column_left }}
+            {% if column_left and column_right %}
+                {% set class = 'col-sm-6' %}
+            {% elseif column_left or column_right %}
+                {% set class = 'col-sm-9' %}
+            {% else %}
+                {% set class = 'col-sm-12' %}
+            {% endif %}
+		    <div id="content" class="{{ class }}">
+			    <div class="us-content">
+                {% if requests %}
+                    <div class="table-responsive-sm us-table-box">
+                        <table class="table table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                            <th>{{ column_product }}</th>
+                            <th>{{ column_date_added }}</th>
+                            <th>{{ column_status }}</th>
+                            <th>{{ column_action }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for request in requests %}
+                            <tr>
+                                <td class="py-3">
+                                    <a href="{{ request.product_href }}">{{ request.product_name }}</a>
+                                </td>
+                                <td class="py-3">{{ request.subscribed_date }}</td>
+                                <td class="py-3">
+                                    {% if request.status %}
+                                        <div class="text-success fw-500">
+                                            {{ text_status_processed }}
+                                            <br/>
+                                            <span class="fsz-10">{{ request.notified_date }}</span>
+                                        </div>
+                                    {% else %}
+                                        <div class="text-warning fw-500">{{ text_status_pending }}</div>
+                                    {% endif %}
+                                </td>
+                                <td class="py-3 text-right">
+                                    <button type="button" onclick="removeNotifyReguest('{{ request.subscription_id }}'); return false;" class="us-cart-del border-0"><i class="fas fa-trash-alt"></i></button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row my-3">
+                        <div class="col-sm-6 text-left">{{ pagination }}</div>
+                        <div class="col-sm-6 text-right">{{ results }}</div>
+                    </div>
+                {% else %}
+                   <div class="mb-3"><b>{{ text_no_requests }}</b></div>
+                   <a href="{{ continue }}" class="us-module-btn">{{ button_continue }}</a>
+                {% endif %}
+			    </div>
+		    </div>
+		    {{ column_right }}
+		</div>
+		{{ content_bottom }}
+	</main>
+</div>
+<script>
+function removeNotifyReguest(subscription_id) {
+    if (!confirm('{{ text_confirm_remove }}')) {
+        return false;
+    }
+    
+    $.ajax({
+        url: 'index.php?route=account/oct_stock_notifier/remove',
+        type: 'post',
+        data: 'subscription_id=' + subscription_id,
+        dataType: 'json',
+        success: function(json) {
+            if (json['success']) {
+                location = '{{ continue_redirect }}';
+            }
+        }
+    });
+}
+</script>
+{{ footer }}

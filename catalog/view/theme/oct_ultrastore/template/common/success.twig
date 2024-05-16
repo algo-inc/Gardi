@@ -1,0 +1,45 @@
+{{ header }}
+<link rel="stylesheet" href="/catalog/view/theme/oct_ultrastore/stylesheet/all.css">
+<div id="common-success" class="container flex-container">
+	<nav aria-label="breadcrumb">
+	  <ul class="breadcrumb us-breadcrumb">
+	    {% for breadcrumb in breadcrumbs %}
+	    <li class="breadcrumb-item us-breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+	    {% endfor %}
+	  </ul>
+	</nav>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="us-main-shop-title">{{ heading_title }}</div>
+		</div>
+	</div>
+	<div class="content-top-box">{{ content_top }}</div>
+	<div class="row">{{ column_left }}
+	    {% if column_left and column_right %}
+	    {% set class = 'col-sm-6' %}
+	    {% elseif column_left or column_right %}
+	    {% set class = 'col-sm-9' %}
+	    {% else %}
+	    {% set class = 'col-sm-12' %}
+	    {% endif %}
+	    <div id="content" class="{{ class }}">
+		    <div class="us-content">
+		      {{ text_message }}
+		      {{ content_bottom }}
+		    </div>
+	    </div>
+	    {{ column_right }}
+	</div>
+</div>
+
+{% if ((oct_analytics_google_ecommerce is defined and oct_analytics_google_ecommerce) and (oct_analytics_order_id is defined and oct_analytics_order_id)) %}
+<script>
+	window.dataGoogleLayer = window.dataGoogleLayer || [];
+	dataGoogleLayer = {{ toGoogle }};
+
+	if(typeof dataGoogleLayer != 'undefined') {
+		gtag('event', 'purchase', dataGoogleLayer);
+	}
+</script>
+{% endif %}
+{{ footer }}

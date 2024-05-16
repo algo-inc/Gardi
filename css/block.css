@@ -1,0 +1,319 @@
+/* -- Catalog -- */
+
+.product-list .block-item {
+  position: relative;
+}
+
+.product-list .block-item a.atab-soc {
+  display: block;
+  text-decoration: none;
+}
+
+.product-list .block-item .block-item-b {
+  position: relative;
+  width: 100%;
+  height: 367px;
+  z-index: 10;
+  background: url(../img/item-b.png) no-repeat;
+  background-size: 100%;
+}
+.product-list .block-item img{
+  position: absolute;
+  width: 90%;
+  top: 0;
+  display: block;
+  z-index: 9;
+}
+
+.product-list .item-info {
+  position: absolute;
+  width: 75%;
+  left: 13%;
+}
+.product-list .item-info .tab-info {position: relative;background: url(../img/tablichka.png) no-repeat;background-size: 100%;width: 100%;height: 82px;margin-top: 85%;z-index: 2;}
+.product-list .item-info .tab-info h3 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 14px;
+  padding-top: 9px;
+  text-transform: uppercase;
+  color: #007400;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.product-list .item-info .tab-info span {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #007600;
+  text-align: left !important;
+  padding-left: 14px;
+}
+.product-list .item-info .tab-info .price {
+  font-size: 14px;
+  color: #c31f3a;
+  font-weight: bold;
+  padding-left: 24px;
+}
+.product-list .item-info .tab-info .price-old {
+  color: #232f3e;
+  margin-top: 3px;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.product-list .item-info .form-select {
+  background-color: rgb(255 255 255 / 0%);
+  font-size: 0.7em;
+  padding: 0.15rem 2.25rem 0.15rem 0.75rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5px;
+  border-color: #bbbb22;
+  color: #fff;
+  text-transform: uppercase;
+  --bs-form-select-bg-img: url(
+  ../img/arrow-narrow-circle.svg);
+  background-size: 14px 14px;
+}
+.product-list .item-info .form-select option {
+  background-color: #FFEB3B;
+  color: #007800;
+}
+.product-list .item-info button {
+  background-color: rgb(255 255 255 / 0%);
+  width: 90%;
+  font-size: 0.7em;
+  margin-left: 5%;
+  margin-top: 5px;
+  border-color: #bbbb22;
+  color: #fff;
+  text-transform: uppercase;
+}
+.product-list .item-info .tab-soc {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  bottom: 111px;
+  z-index: 1;
+  transition-duration: 1000ms;
+}
+.product-list .item-info .tab-soc .icon-k {
+  position: relative;
+  float: left;
+  margin-left: 15px;
+  background: linear-gradient(41deg, rgba(33,171,32,1) 0%, rgba(9,121,11,1) 59%);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+}
+.product-list .item-info .tab-soc .icon-k:hover {
+  background: linear-gradient(41deg, rgba(226,158,116,1) 0%, rgba(142,65,34,1) 59%);
+}
+.product-list .item-info .tab-soc .izbb i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/favorite.svg) no-repeat;
+  background-size: 22px;
+  background-position: center;
+  stroke: #FFEB3B;
+}
+.product-list .item-info .tab-soc .srvv i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/compare.svg) no-repeat;
+  background-size: 22px;
+  background-position: center;
+  stroke: #FFEB3B;
+}
+.product-list .item-info .tab-soc .qvkk i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/view.svg) no-repeat;
+  background-size: 22px;
+  background-position: center;
+  stroke: #FFEB3B;
+}
+.product-list a.atab-soc:hover .item-info .tab-soc {
+  transform: translateY(-60px);
+}
+
+@media screen and (max-width: 992px) {
+  .product-list .item {
+      position: relative;
+      height: auto;
+  }
+  .product-list .item .the-best span {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      padding: 7px 5px 5px 6px;
+      margin-right: 20px;
+      background: url(../img/bush.svg) no-repeat;
+      font-family: 'Didact Gothic', sans-serif;
+      color: #fff;
+  }
+  .product-list .item h2.the-best {
+      font-size: 12px;
+      font-family: 'Didact Gothic', sans-serif;
+      color: #2b5c0b;
+      text-transform: uppercase;
+      padding-left: 0;
+      margin-top: 0;
+  }
+  .product-list .contai-item {
+      position: relative;
+      height: 535px;
+  }
+  
+  .product-list .block-item .block-item-b {
+      position: relative;
+      height: 280px;
+      width: 100%;
+      z-index: 10;
+      background: url(../img/item-b.png) no-repeat;
+      background-size: 100%;
+  }
+  .product-list .block-item {
+      position: relative;
+      width: 50% !important;
+      height: 280px;
+  }
+  .product-list .block-item img{
+      position: absolute;
+      width: 85%;
+      top: 0;
+      display: block;
+      z-index: 9;
+  }
+  
+  .product-list .item-info {
+      position: absolute;
+      left: 0;
+      width: 100%;
+  }
+  .product-list .item-info .tab-info {position: relative;background: url(../img/tablichka.png) no-repeat;background-size: 100%;width: 71%;margin: 0 auto;height: 58px;margin-top: 105px;z-index: 2;}
+  .product-list .item-info .tab-info h3 {
+      font-family: 'Didact Gothic', sans-serif;
+      font-size: 7px;
+      text-align: left;
+      padding-left: 9px;
+      padding-top: 9px;
+      text-transform: uppercase;
+      color: #007400;
+      font-weight: bold;
+      margin-bottom: 0;
+  }
+  .product-list .item-info .tab-info span {
+      display: block;
+      font-size: 5px;
+      text-transform: uppercase;
+      color: #007600;
+      text-align: left !important;
+      padding-left: 9px;
+  }
+  .product-list .item-info .tab-info .price {
+      color: #c31f3a;
+      font-weight: bold;
+      padding-left: 21px;
+      font-size: 9px;
+  }
+  .product-list .item-info .tab-info .price-old {
+      color: #232f3e;
+      margin-top: 2px;
+      font-size: 8px;
+      text-decoration: line-through;
+  }
+  .product-list .item-info .form-select {
+      position: relative;
+      background-color: rgb(255 255 255 / 0%);
+      font-size: 6px;
+      border-color: #bbbb22;
+      padding: 2px 5px;
+      color: #fff;
+      text-transform: uppercase;
+      --bs-form-select-bg-img: url(
+      ../img/arrow-narrow-circle.svg);
+      background-size: 9px 9px;
+      background-position: right 0.25rem center;
+      width: 70%;
+      margin: 5px auto;
+  }
+  .product-list .item-info .form-select option {
+      background-color: #FFEB3B;
+      color: #007800;
+  }
+  .product-list .item-info button {
+      position: relative;
+      display: block;
+      padding: 2px 5px;
+      background-color: rgb(255 255 255 / 0%);
+      font-size: 8px;
+      border-color: #bbbb22;
+      color: #fff;
+      text-transform: uppercase;
+      width: 70%;
+      margin: 5px auto;
+  }
+  .product-list .item-info .tab-soc {
+      position: absolute;
+      left: 19%;
+      width: 50%;
+      margin: 0 auto;
+      display: inline-block;
+      bottom: 47%;
+      z-index: 1;
+      transition-duration: 1000ms;
+  }
+  .product-list .item-info .tab-soc .icon-k {
+      position: relative;
+      float: left;
+      margin-left: 6px;
+      background: linear-gradient(41deg, rgba(33,171,32,1) 0%, rgba(9,121,11,1) 59%);
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+  }
+  .product-list .item-info .tab-soc .icon-k:hover {
+      background: linear-gradient(41deg, rgba(226,158,116,1) 0%, rgba(142,65,34,1) 59%);
+  }
+  .product-list .item-info .tab-soc .izbb i {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/favorite.svg) no-repeat;
+      background-size: 14px;
+      background-position: center;
+      stroke: #FFEB3B;
+  }
+  .product-list .item-info .tab-soc .srvv i {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/compare.svg) no-repeat;
+      background-size: 14px;
+      background-position: center;
+      stroke: #FFEB3B;
+  }
+  .product-list .item-info .tab-soc .qvkk i {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: url(../img/view.svg) no-repeat;
+      background-size: 14px;
+      background-position: center;
+      stroke: #FFEB3B;
+  }
+  .product-list a.atab-soc:hover .item-info .tab-soc {
+      transform: translateY(-10%);
+  }
+  .product-list .block-item a.atab-soc {display: block;height: 56%;text-decoration: none;}
+}
+
+/* -- END Catalog -- */

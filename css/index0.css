@@ -1,0 +1,119 @@
+
+
+.container {
+    width: 100%;
+}
+
+
+
+.ement-1 {
+    position: absolute;
+    width: 100%;
+    bottom: 25vw;
+    z-index: 5;
+}
+
+.ement-2 {
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    left: -5%;
+    z-index: 5;
+}
+
+.ement-3 {
+    position: absolute;
+    width: 20%;
+    top: -5%;
+    left: 10%;
+    z-index: 5;
+}
+
+.ement-4 {
+    position: absolute;
+    width: 15%;
+    top: 2%;
+    right: -2%;
+    z-index: 5;
+}
+
+
+
+.cloud4 {
+    width: 311px;
+    height: 59px;
+    background: url(../images/nebo-5.png) no-repeat;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    animation: clouds 24s linear infinite;
+    transform: translateX(500%);
+    opacity: 1;
+    z-index: 4;
+}
+
+.cloud5 {
+    width: 261px;
+    height: 86px;
+    background: url(../images/nebo-6.png) no-repeat;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    animation: clouds 22s linear infinite;
+    transform: translateX(1100%);
+    opacity: 1;
+    z-index: 4;
+}
+
+.cloud6 {
+    width: 282px;
+    height: 79px;
+    background: url(../images/nebo-7.png) no-repeat;
+    position: absolute;
+    top: 18%;
+    left: 0;
+    animation: clouds 20s linear infinite;
+    transform: translateX(500%);
+    opacity: 1;
+    z-index: 4;
+}
+
+.cloud7 {
+    width: 292px;
+    height: 73px;
+    background: url(../images/nebo-8.png) no-repeat;
+    position: absolute;
+    top: 24%;
+    left: 0;
+    animation: clouds 18s linear infinite;
+    transform: translateX(500%);
+    opacity: 1;
+    z-index: 4;
+}
+
+.cloud8 {
+    width: 327px;
+    height: 35px;
+    background: url(../images/nebo-9.png) no-repeat;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    animation: clouds 16s linear infinite;
+    transform: translateX(500%);
+    opacity: 1;
+    z-index: 4;
+}
+
+.cloud9 {
+    width: 355px;
+    height: 87px;
+    background: url(../images/nebo-10.png) no-repeat;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    animation: clouds 14s linear infinite;
+    transform: translateX(500%);
+    opacity: 1;
+    z-index: 4;
+}
+

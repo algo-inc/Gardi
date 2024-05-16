@@ -1,0 +1,226 @@
+  <footer>
+    <img class="foot__bg_1 wow zoomIn animated" src="/catalog/view/theme/oct_ultrastore/img/foot-c-1.svg" alt=""/>
+    <img class="foot__bg_2 wow zoomIn animated" src="/catalog/view/theme/oct_ultrastore/img/foot-c-2.svg" alt=""/>
+    <img class="foot__bg_3" src="/catalog/view/theme/oct_ultrastore/img/foot-c-3.svg" alt=""/>
+    <div class="container">
+      <div class="row foot-one-row">
+        <div class="col-md-8 foot-one-col">
+          <h2 class="the-best">Контакти</h2>
+          <h3 class="foot-h">Інтернет-магазин рослин №1 в Україні Розплідник рослин Гарді. <br/>Доставка рослин по всій Україні</h3>
+        </div>
+        <div class="col-md-4 foot-two-col">
+          <div class="row"><img class="foot-logo wow zoomIn animated" src="/catalog/view/theme/oct_ultrastore/img/logo-f.png" alt=""/></div>
+          <div class="row"><a class="foot-tel" href="tel:+380675315512">+380 67 531-55-12</a></div>
+          <div class="row"><a href="tel:+380675315512"><button type="button" class="foot-b btn btn-primary">Зателефонувати</button></a></div>
+          <img class="foot__bg_4 wow zoomIn animated" src="/catalog/view/theme/oct_ultrastore/img/footer-bg-c.svg" alt=""/>
+        </div>
+      </div>
+      <div class="row foot-two-row">
+        <div class="col-md-4 foot-tree-col">
+          <h3>Декоративні рослини</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">м. Кременчук, вул. Віри Холодної<br/><span>(Рокосовського), 64-Б</span></a></li>
+            <li class="mb-2"><a href="tel:+380675315512">+380 67 531-55-12</a></li>
+            <li class="mb-2"><a href="emeil:nursery@gardi.biz">E-mail: nursery@gardi.biz</a></li>
+            <li class="mb-2"><a href="#">Відділ продажу працює<br/><span>з 8:00 до 17:00 (неділя -вихідний)</span><br/><span>Субота з 9:00 до 16:00</span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 foot-four-col">
+          <h3>Квіткові рослини</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">м. Горішні Плавні,<br><span>вул. Портова 4</span></a></li>
+            <li class="mb-2"><a href="tel:+380675309976">+380 67 530-99-76</a></li>
+            <li class="mb-2"><a href="emeil:flowers@gardi.biz">E-mail: flowers@gardi.biz</a></li>
+            <li class="mb-2"><a href="#">Відділ продажу працює<br/><span>з 8:00 до 17:00 (неділя -вихідний)</span><br/><span>Субота з 9:00 до 16:00</span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 foot-five-col">
+          <h3>Розсадник Київ</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">м. Київ, 08173<br/><span>вул. Обухівська 1</span></a></li>
+            <li class="mb-2"><a href="tel:+380675315512">+380 67 531-55-12,</a></li>
+            <li class="mb-2"><a href="emeil:nursery@gardi.biz">E-mail: nursery@gardi.biz</a></li>
+            <li class="mb-2"><a href="#">Відділ продажу працює<br/><span>з 8:00 до 17:00 (неділя -вихідний)</span><br/><span>Субота з 9:00 до 16:00</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row foot-tree-row">
+        <div class="col-md-2 foot-six-col">
+          <div class="footer-made">
+            <a href="https://www.itlab.win/"><img src="https://www.itlab.studio/itlab.studio.svg" alt="Створення, розробка, просування мобильних додатків, сайтів та інтернет-магазинів"></a>
+         </div>
+        </div>
+        <div class="col-md-3 foot-sixe-col d-flex align-items-center">
+          <p>© Копірайт</p>
+        </div>
+        <div class="col-md-3 foot-sixe-colll d-flex align-items-center">
+          <ul class="soccc">
+            <li>
+              <img src="./upload/partn/auri_logo.png" alt="">
+            </li>
+            <li>
+              <img src="./upload/partn/ena_logo.png" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 foot-seven-col d-flex justify-content-end">
+          <ul class="soc">
+            <li class="facebook">
+              <a href="https://www.facebook.com/gardi.nursery/" target="_blank"></a>
+            </li>
+            <li class="youtube">
+              <a href="https://www.youtube.com/@gardi_nursery" target="_blank"></a>
+            </li>
+            <li class="insta">
+              <a href="https://www.instagram.com/gardi.nursery/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<div class="follow-cursor"></div>
+{% if oct_subscribe_status is defined and oct_subscribe_status %}
+<script>
+$(function() {
+    if (getOCTCookie('oct_subscribe') == 'undefined') {
+        setTimeout(function(){
+            octPopupSubscribe();
+        }, {{ oct_subscribe_form_data.seconds ? oct_subscribe_form_data.seconds : '10000' }});
+
+        const date = new Date('{{ oct_subscribe_day_now }}'.replace(/-/g, "/"));
+        date.setTime(date.getTime() + ({{ oct_subscribe_form_data.expire ? oct_subscribe_form_data.expire : '1' }} * 24 * 60 * 60 * 1000));
+        document.cookie = 'oct_subscribe=1; path=/; expires=' + date.toUTCString();
+    }
+});
+</script>
+{% endif %}
+<script async src="catalog/view/theme/oct_ultrastore/js/oct-fonts.js"></script>
+{% for script in scripts %}
+<script src="{{ script }}"></script>
+{% endfor %}
+<div class="modal-holder"></div>
+<div id="us_overlay"></div>
+{% if oct_isiOS is defined and oct_isiOS %}
+<script>
+var elementsA = document.getElementsByTagName('a');
+for(var i = 0; i < elementsA.length; i++){
+    elementsA[i].addEventListener('touchend',function(){});
+}
+
+var elementsB = document.getElementsByTagName('button');
+for(var i = 1; i < elementsB.length; i++){
+    elementsB[i].addEventListener('touchend',function(){});
+}
+
+var elementsI = document.getElementsByTagName('input');
+for(var i = 0; i < elementsI.length; i++){
+    elementsI[i].addEventListener('touchend',function(){});
+}
+
+var elementsS = document.getElementsByTagName('span');
+for(var i = 0; i < elementsS.length; i++){
+    elementsS[i].addEventListener('touchend',function(){});
+}
+</script>
+{% endif %}
+
+{% if (oct_analytics_targets is defined and oct_analytics_targets is not empty) %}
+    <script>
+        {% for target in oct_analytics_targets %}
+        $('body').on('click', '{{ target['atribute'] }}', function() {
+            {% if (target['google'] is defined and target['google']) %}
+            gtag('event', '{{ target['action'] }}', {
+                'event_category' : '{{ target['category'] }}'
+            });
+            {% endif %}
+        });
+        {% endfor %}
+    </script>
+{% endif %}
+
+{% if (oct_policy_value is defined and oct_policy_value is not empty and oct_policy_value) %}
+<script>
+function getOctPolicy() {
+    $.ajax({
+        url: "index.php?route=common/footer/getOctPolicy",
+        type: "post",
+        dataType: "json",
+        cache: false,
+        success: function(t) {
+            if (t['text_oct_policy']) {
+                var html = '<div id="oct-policy" class="fixed-bottom"><div class="container"><div class="row"><div class="col-lg-12 d-flex align-items-center justify-content-between flex-column flex-md-row"><div class="oct-policy-text">'+ t['text_oct_policy'] +'</div><button type="button" id="oct-policy-btn" class="mt-4 mt-md-0">'+ t['oct_policy_accept'] +'</button></div></div></div></div>';
+
+                $('body').append(html);
+
+                $('#oct-policy-btn').on('click', function () {
+                    $('#oct-policy').addClass('hidden');
+                    const date = new Date(t['oct_policy_day_now'].replace(/-/g, "/"));
+                    date.setTime(date.getTime() + (t['oct_max_day'] * 24 * 60 * 60 * 1000));
+                    document.cookie = t['oct_policy_value']+'=1; path=/; expires=' + date.toUTCString();
+                });
+            }
+        },
+        error: function(e, t, i) {
+        }
+    });
+}
+
+$(function() {
+    if (getOCTCookie('{{ oct_policy_value }}') == 'undefined') {
+        getOctPolicy();
+    }
+});
+</script>
+{% endif %}
+{% if oct_jscode is defined and oct_jscode %}
+<script>
+{{ oct_jscode }}
+</script>
+{% endif %}
+
+<script src="/catalog/view/theme/oct_ultrastore/js/wow.min.js"></script>
+{{ cookie }}
+<script src="{{ bootstrap }}" type="text/javascript"></script>
+{% for script in scripts %}
+  <script src="{{ script.href }}" type="text/javascript"></script>
+{% endfor %}
+<script>
+     new WOW().init();
+</script>
+<script>
+  setTimeout(function() {
+    document.getElementById('wBlock').style.display = 'block';
+  }, 1000);
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const followCursor = () => {
+  const el = document.querySelector('.follow-cursor')
+  window.addEventListener('mousemove', e => {
+    const target = e.target
+    if (!target) return
+    if (target.closest('a, i, img, button')) {
+      el.classList.add('follow-cursor_active')
+    } else {
+      el.classList.remove('follow-cursor_active') 
+    }
+    el.style.left = e.pageX + 'px'
+    el.style.top = e.pageY + 'px'
+  })
+  }
+  followCursor()
+  })
+</script>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 5000);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{{ header }}
+<link rel="stylesheet" href="/catalog/view/theme/oct_ultrastore/stylesheet/all.css">
+<div id="information-information" class="container flex-container">
+	{{ oct_breadcrumbs }}
+	<div class="content-top-box">{{ content_top }}</div>
+	<main>
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="us-main-shop-title">{{ heading_title }}</h1>
+			</div>
+		</div>
+		<div class="row">{{ column_left }}
+	    {% if column_left and column_right %}
+	    {% set class = 'col-sm-6' %}
+	    {% elseif column_left or column_right %}
+	    {% set class = 'col-sm-9' %}
+	    {% else %}
+	    {% set class = 'col-sm-12' %}
+	    {% endif %}
+	    <div id="content" class="{{ class }}">
+		    <div class="us-content us-content-inform">
+		      {{ description }}
+		    </div>
+	    </div>
+	    {{ column_right }}
+    </div>
+	</main>
+    {{ content_bottom }}
+</div>
+{{ footer }}
